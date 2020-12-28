@@ -15,8 +15,9 @@ config :container, ContainerWeb.Endpoint,
   http: [
     port: String.to_integer(System.get_env("PORT") || "4000"),
     url: [
-      String.to_integer(System.get_env("HOST") || "example.com"), port: 80],
+      String.to_integer(System.get_env("HOST_NAME") || "example.com"), port: 4000),
       transport_options: [socket_opts: [:inet6]]
+    ]
   ],
   secret_key_base: secret_key_base
 

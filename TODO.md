@@ -1,0 +1,2 @@
+- Update Phoenix to the latest version to avoid errors (with the release of 1.6)
+- 

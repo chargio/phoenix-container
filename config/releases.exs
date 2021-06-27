@@ -19,7 +19,7 @@ config :container, ContainerWeb.Endpoint,
   secret_key_base: secret_key_base
 
 
-config :my_app,
+config :container,
   app_title: System.get_env("MY_STRING", "There is nothing set in MY_STRING")
 
 # ## Using releases (Elixir v1.9+)

@@ -65,3 +65,7 @@ config :phoenix, :stacktrace_depth, 20
 
 # Initialize plugs at runtime for faster development compilation
 config :phoenix, :plug_init_mode, :runtime
+
+
+config :container,
+  app_title: System.get_env("MY_STRING", "There is nothing set in MY_STRING")

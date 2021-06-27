@@ -18,6 +18,10 @@ config :container, ContainerWeb.Endpoint,
   ],
   secret_key_base: secret_key_base
 
+
+config :my_app,
+  app_title: System.get_env("MY_STRING", "There is nothing set in MY_STRING")
+
 # ## Using releases (Elixir v1.9+)
 #
 # If you are doing OTP releases, you need to instruct Phoenix

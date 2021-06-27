@@ -2,11 +2,13 @@
   <h1>Some other page</h1>
   <p>Just to make sure that we can show other pages and link to the first one</p>
   <%= link "Main", to: Routes.page_path(@conn, :index) %>
+  <p></p>
+  <h2> <%= Application.get_env(:container,:app_title) %></h2>
 </section>
 
 <section class="row">
   <article class="column">
-    <h2>The main page link</h2>
+    <h2>The main page links</h2>
     <ul>
       <li>
         <%= link "Main", to: Routes.page_path(@conn, :index) %>
